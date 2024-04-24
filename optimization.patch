@@ -1,0 +1,11 @@
+--- ./src/Makefile	2024-04-24 13:55:13.251656519 +0000
++++ ./src/Makefile	2024-04-24 14:06:54.039222531 +0000
+@@ -241,7 +241,7 @@
+ debug_opts=-D_DEBUG
+ else # build a normal optimized version
+ debug_opts=-DNDEBUG
+-opts+=-O3
++opts+=-Ofast -march=native
+ endif
+ 
+ # debug_opts also get passed to windres
